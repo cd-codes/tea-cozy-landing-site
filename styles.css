@@ -1,0 +1,208 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: black;
+    color: seashell;
+    opacity: 0.9;
+}
+
+a {
+    transition: color 200ms;
+}
+
+a:hover {
+    color: grey;
+}
+
+header {
+    height: 69px;
+    width: 100vw;
+    border-bottom: 1px solid seashell;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li a {
+    color: seashell;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+main {
+    position: relative;
+    /* top: 70px; */
+    width: 100vw;
+    text-align: center;
+}
+
+.jumbotron-bkg {
+    height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1jjzceh*_ga*MjY4ODE0MzY5LjE2MTY2MDMxMTA.*_ga_3LRZM6TM9L*MTY1NjI2MzE4OC4xMjUuMS4xNjU2MjY0MTEwLjU3");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron-banner {
+    background-color: black;
+}
+
+.jumbotron-banner h2,
+.jumbotron-banner h4{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.featured {
+    max-width: 1000px;
+    margin-top: 100px;
+    margin: 100px auto 50px;
+}
+
+.featured-banner {
+    margin-bottom: 30px;
+}
+
+.featured-banner h2, 
+.featured-banner p {
+    margin: 10px auto;
+}
+
+.featured-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 10px;
+}
+
+.card img {
+    height: 200px;
+    width: 300px;
+}
+
+.card h4 {
+    margin: 0 auto;
+    padding: 10px 10px 20px 10px;
+}
+
+.location-bkg {
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*mh17d9*_ga*MjY4ODE0MzY5LjE2MTY2MDMxMTA.*_ga_3LRZM6TM9L*MTY1NjM1ODM0Ni4xMjYuMS4xNjU2MzU4ODA1Ljg.");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-bkg h2 {
+    margin-bottom: 0px;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.location {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 15px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.location h3,
+.location p {
+    margin: 22px 0px;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.rights {
+    padding-left: 20px;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        height: calc(2*50px);
+        width: calc(2*160px);
+        margin: 0 auto;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    .jumbotron-bkg {
+        max-width: 400px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .location-bkg {
+        height: auto;
+        background-image: none;
+    }
+    
+    .location-cards {
+        flex-wrap: wrap;
+    }
+
+    .location {
+        flex: 0 0 auto;
+        border: 2px solid seashell;
+    }
+
+    footer {
+        margin-top: 70px;
+    }
+}
