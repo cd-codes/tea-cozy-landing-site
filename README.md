@@ -1,6 +1,6 @@
 # tea-cozy-landing-site
 
-This is a coding assignment from the Codecademy Front End Engineering Career Path.
+This is a coding assignment from the Codecademy Front-End Engineer Career Path.
 
 Goals of this assignment:
 - Use HTML and CSS with Flexbox
